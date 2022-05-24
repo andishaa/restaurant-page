@@ -36,3 +36,15 @@ body {
 .navigation ul li {
     cursor: pointer;
 }
+
+.footer {
+    position: sticky;
+    top: 100vh;
+    text-align: center;
+    padding: 1.3rem;
+    border-top: 1px solid grey;
+}
+
+.footer a {
+    text-decoration: none;
+}

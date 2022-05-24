@@ -25,8 +25,24 @@ const header = () => {
     return header;
 };
 
-export const initialPageLoad = () => {
-    document.body.prepend(header());
-    const content = document.getElementById('content');
+const footer = () => {
+    const footer = document.createElement('footer');
+    footer.classList.add('footer');
 
+    const currentYear = new Date().getFullYear();
+    footer.innerHTML = `Copyright &copy; ${currentYear} <a href="https://github.com/andishaa"
+    target="_blank">andisha</a>`;
+
+    const projectNotice = document.createElement('p');
+    projectNotice.classList.add('project-notice');
+    projectNotice.innerHTML = 'This project is a part of <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> curriculum';
+    footer.appendChild(projectNotice);
+
+    return footer;
+}
+
+export const initialPageLoad = () => {
+    const body = document.body;
+    body.prepend(header());
+    body.appendChild(footer());
 }
