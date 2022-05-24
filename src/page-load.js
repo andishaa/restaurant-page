@@ -6,10 +6,13 @@ const header = () => {
     const ul = document.createElement('ul');
     const home = document.createElement('li');
     home.textContent = 'Home';
+    home.id = 'home';
     const menu = document.createElement('li');
     menu.textContent = 'Menu';
+    menu.id = 'menu';
     const contact = document.createElement('li');
     contact.textContent = 'Contact';
+    contact.id = 'contact';
 
     ul.appendChild(home);
     ul.appendChild(menu);
