@@ -1,3 +1,5 @@
+import { homeContainer } from "./home-tab";
+
 const header = () => {
     const header = document.createElement('header');
     header.classList.add('header');
@@ -42,7 +44,10 @@ const footer = () => {
 }
 
 export const initialPageLoad = () => {
+    const content = document.getElementById('content');
     const body = document.body;
+
     body.prepend(header());
+    content.appendChild(homeContainer());
     body.appendChild(footer());
 }
