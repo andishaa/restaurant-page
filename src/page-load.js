@@ -27,6 +27,14 @@ const header = () => {
     return header;
 };
 
+const imageCopyright = () => {
+    const element = document.createElement('div');
+    element.classList.add('image-copyright');
+    element.innerHTML = 'Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/s/photos/restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>';
+
+    return element;
+}
+
 const footer = () => {
     const footer = document.createElement('footer');
     footer.classList.add('footer');
@@ -49,5 +57,6 @@ export const initialPageLoad = () => {
 
     body.prepend(header());
     content.appendChild(homeContainer());
+    content.appendChild(imageCopyright());
     body.appendChild(footer());
 }

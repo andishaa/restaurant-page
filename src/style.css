@@ -7,6 +7,8 @@
 :root {
     --shadow: 0px 3px 6px -4px rgb(0, 0, 0);
     --header-height: 5rem;
+    --main-color: #281900;
+    --link-color: #ffca16;
 }
 
 html {
@@ -51,7 +53,7 @@ body {
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 600px 1fr;
+    grid-template-columns: 1fr 37.5rem 1fr;
     overflow: auto;
     background: url('./main-background.jpg');
     background-repeat: no-repeat;
@@ -59,6 +61,19 @@ body {
     background-size: cover;
     background-color: white;
     background-attachment: fixed;
+    position: relative;
+}
+
+.image-copyright {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    color: white;
+}
+
+.image-copyright a {
+    text-decoration: none;
+    color: var(--link-color);
 }
 
 .home-container {
