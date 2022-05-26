@@ -112,7 +112,6 @@ body {
     grid-area: footer;
     text-align: center;
     padding: 1.3rem;
-    border-top: 1px solid grey;
 }
 
 .footer a {
