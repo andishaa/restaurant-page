@@ -94,6 +94,7 @@ body {
     padding: 1rem;
     text-align: center;
     color: black;
+    user-select: none;
 }
 
 .hero-text h1 {
@@ -101,10 +102,22 @@ body {
 }
 
 .reservations-btn {
-    padding: 0.5rem 1.5rem;
-    border-radius: 1rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
     text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid var(--link-color);
+    color: var(--link-color);
+    transition: 0.4s;
     cursor: pointer;
+}
+
+.reservations-btn:hover {
+    background-color: var(--link-color);
+    color: white;
 }
 
 /*<--- FOOTER --->*/ 
