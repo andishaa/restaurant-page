@@ -1,9 +1,21 @@
 export const homeContainer = () => {
-    const element = document.createElement('div');
-    element.classList.add('home-container');
+    const container = document.createElement('div');
+    const heroText = document.createElement('div');
     const h1 = document.createElement('h1');
-    h1.textContent = 'Welcome to Juicy';
-    element.appendChild(h1);
+    const h3 = document.createElement('h3');
+    const heroBtn = document.createElement('button');
 
-    return element;
+    container.classList.add('home-container');
+    heroText.classList.add('hero-text');
+    heroBtn.classList.add('reservations-btn');
+    
+    h1.textContent = 'Welcome to Juicy';
+    h3.textContent = 'Your luxorious wine and dine place';
+    heroBtn.textContent = 'Reservations';
+
+    heroText.appendChild(h1);
+    heroText.appendChild(h3);
+    container.appendChild(heroText);
+    container.append(heroBtn);
+    return container;
 }

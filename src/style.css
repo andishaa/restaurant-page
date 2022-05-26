@@ -8,7 +8,7 @@
     --shadow: 0px 3px 6px -4px rgb(0, 0, 0);
     --header-height: 5rem;
     --main-color: #281900;
-    --link-color: #ffca16;
+    --link-color: #C73E1D;
 }
 
 html {
@@ -46,6 +46,7 @@ body {
 
 .navigation ul li {
     cursor: pointer;
+    color: var(--link-color);
 }
 
 /*<--- PAGE TAB CONTAINERS --->*/
@@ -78,9 +79,31 @@ body {
 
 .home-container {
     grid-area: 1 / 2 / 1 / 3;
-    background-color: white;
-    max-width: 50rem;
-    opacity: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+}
+
+.reservations-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    cursor: pointer;
 }
 
 /*<--- FOOTER --->*/ 
@@ -93,4 +116,5 @@ body {
 
 .footer a {
     text-decoration: none;
+    color: var(--link-color);
 }
