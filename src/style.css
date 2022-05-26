@@ -68,7 +68,8 @@ body {
 .image-copyright {
     position: absolute;
     bottom: 0.5rem;
-    right: 1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
 }
 
