@@ -52,9 +52,7 @@ body {
 /*<--- PAGE TAB CONTAINERS --->*/
 #content {
     grid-area: main;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 37.5rem 1fr;
+    display: flex;
     overflow: auto;
     background: url('./main-background.jpg');
     background-repeat: no-repeat;
@@ -79,11 +77,12 @@ body {
 }
 
 .home-container {
-    grid-area: 1 / 2 / 1 / 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     gap: 2rem;
 }
 
