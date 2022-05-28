@@ -1,4 +1,7 @@
-import ChefImg from './chefMenuImg.jpg';
+import ChefImg from './chef-menu-img.jpg';
+import WineImg from './wine-menu-img.jpg';
+import AperitifsImg from './aperitifs-menu-img.jpg';
+import DigestiveImg from './digestive-menu-img.jpg';
 
 export const menuContainer = () => {
     const container = document.createElement('div');
@@ -23,26 +26,26 @@ export const menuContainer = () => {
 
     const wineMenuTitle = document.createElement('div');
     const wineMenuImg = new Image();
-    wineMenuImg.src = ChefImg;
+    wineMenuImg.src = WineImg;
     wineMenuImg.classList.add('menu-img');
     wineMenuTitle.classList.add('item-title');
-    wineMenuTitle.innerHTML = "Season of spring </br> Chef's tasting menu";
+    wineMenuTitle.innerHTML = "Wine list";
     wineMenu.append(wineMenuImg, wineMenuTitle);
 
     const aperetifsMenuTitle = document.createElement('div');
     const aperetifsMenuImg = new Image();
-    aperetifsMenuImg.src = ChefImg;
+    aperetifsMenuImg.src = AperitifsImg;
     aperetifsMenuImg.classList.add('menu-img');
     aperetifsMenuTitle.classList.add('item-title');
-    aperetifsMenuTitle.innerHTML = "Season of spring </br> Chef's tasting menu";
+    aperetifsMenuTitle.innerHTML = "Aperitifs";
     aperetifsMenu.append(aperetifsMenuImg, aperetifsMenuTitle);
 
     const digestiveMenuTitle = document.createElement('div');
     const digestiveMenuImg = new Image();
-    digestiveMenuImg.src = ChefImg;
+    digestiveMenuImg.src = DigestiveImg;
     digestiveMenuImg.classList.add('menu-img');
     digestiveMenuTitle.classList.add('item-title');
-    digestiveMenuTitle.innerHTML = "Season of spring </br> Chef's tasting menu";
+    digestiveMenuTitle.innerHTML = "Digestive";
     digestiveMenu.append(digestiveMenuImg, digestiveMenuTitle);
 
     container.append(chefMenu, wineMenu, aperetifsMenu, digestiveMenu);

@@ -8,7 +8,7 @@
     --shadow: 0px 3px 6px -4px rgb(0, 0, 0);
     --header-height: 5rem;
     --main-color: #281900;
-    --link-color: #C73E1D;
+    --link-color: rgb(170, 0, 0);
 }
 
 html {
@@ -140,12 +140,15 @@ body {
 }
 
 .item-title {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     color: var(--link-color);
-    /* user-select: none; */
+    text-transform: uppercase;
     pointer-events: none;
 }
 
@@ -153,6 +156,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 0.2rem;
     width: 100%;
     max-width: 25rem;
     height: auto;
