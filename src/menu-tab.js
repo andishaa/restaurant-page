@@ -1,7 +1,7 @@
-import ChefImg from './chef-menu-img.jpg';
-import WineImg from './wine-menu-img.jpg';
-import AperitifsImg from './aperitifs-menu-img.jpg';
-import DigestiveImg from './digestive-menu-img.jpg';
+import ChefImg from './images/chef-menu-img.jpg';
+import WineImg from './images/wine-menu-img.jpg';
+import AperitifsImg from './images/aperitifs-menu-img.jpg';
+import DigestiveImg from './images/digestive-menu-img.jpg';
 
 export const menuContainer = () => {
     const container = document.createElement('div');
