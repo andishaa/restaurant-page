@@ -61,6 +61,7 @@ body {
     background-color: white;
     background-attachment: fixed;
     position: relative;
+    padding: 1rem 0;
 }
 
 .image-copyright {
@@ -131,6 +132,7 @@ body {
     gap: 1rem;
     margin-left: auto;
     margin-right: auto;
+    max-width: 51rem;
 }
 
 .menu-item {
