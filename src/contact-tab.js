@@ -35,8 +35,8 @@ export const contactContainer = () => {
     const msgTitle = document.createElement('p');
     msgTitle.textContent = 'Your message';
     const txtArea = document.createElement('textarea');
-    txtArea.classList.add('msg-textarea');
-    txtArea.placeholder = 'Enter your message';
+    txtArea.classList.add('input-textarea');
+    txtArea.placeholder = 'Enter your message here...';
     msgGroup.append(msgTitle, txtArea);
 
     const btnGroup = document.createElement('div');
