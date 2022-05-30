@@ -2,6 +2,7 @@ import './style.css';
 import { initialPageLoad } from './page-load.js';
 import { homeContainer } from "./home-tab";
 import { menuContainer } from './menu-tab';
+import { contactContainer } from './contact-tab';
 
 initialPageLoad();
 
@@ -25,6 +26,10 @@ const tabSwitcher = () => {
                 case 'menu':
                     clearContent();
                     content.appendChild(menuContainer());
+                    break;
+                case 'contact':
+                    clearContent();
+                    content.appendChild(contactContainer());
                     break;
                 default:
                     break;
