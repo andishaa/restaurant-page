@@ -34,11 +34,7 @@ const tabSwitcher = () => {
                 default:
                     break;
             }
-
         });
     });
-
-
-
 };
 tabSwitcher();
