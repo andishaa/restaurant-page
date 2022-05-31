@@ -14,6 +14,7 @@ export const contactContainer = () => {
     nameInput.type = 'text';
     nameInput.id = 'name';
     nameInput.name = 'name';
+    nameInput.required = true;
     nameInput.placeholder = 'Enter your name';
     nameGroup.append(nameLabel, nameInput);
 
@@ -27,6 +28,7 @@ export const contactContainer = () => {
     emailInput.type = 'email';
     emailInput.id = 'mail';
     emailInput.name = 'mail';
+    emailInput.required = true;
     emailInput.placeholder = 'Enter your e-mail';
     emailGroup.append(emailLabel, emailInput);
 
@@ -37,6 +39,7 @@ export const contactContainer = () => {
     const txtArea = document.createElement('textarea');
     txtArea.classList.add('input-textarea');
     txtArea.placeholder = 'Enter your message here...';
+    txtArea.required = true;
     msgGroup.append(msgTitle, txtArea);
 
     const btnGroup = document.createElement('div');
