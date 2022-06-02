@@ -58,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     overflow: auto;
-    background: url('./images/main-background.jpg');
+    background: url('./images/main-background.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
