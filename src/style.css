@@ -141,7 +141,7 @@ body {
     max-width: 51rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 816px) {
     .menu-container {
         align-self: center;
         margin-left: auto;
