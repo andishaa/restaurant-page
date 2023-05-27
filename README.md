@@ -2,8 +2,6 @@
 
 This is a simple restaurant page project that showcases different sections of a restaurant's website, including the home page, menu, contact information, and more. Each section is dynamically generated using JavaScript.
 
-![Restaurant Page Screenshot](screenshot.png)
-
 ## Features
 
 - Responsive design that adapts to various screen sizes.
